@@ -1,0 +1,238 @@
+{% extends "base/index.html" %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block navigation %}
+
+<div class="page">
+      <!--
+      ========================================================
+                              HEADER
+      ========================================================
+      -->
+      <header class="page-header">
+
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap top-panel-none-items">
+          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-hover-on="false" data-stick-up="false" data-sm-layout="rd-navbar-fullwidth" data-sm-device-layout="rd-navbar-fullwidth" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static">
+            <!-- <div class="rd-navbar-top-panel">
+              <div class="rd-navbar-inner">
+                <button data-rd-navbar-toggle=".list-inline, .fa-envelope, .fa-phone, .fa-shopping-cart" class="rd-navbar-collapse-toggle"><span></span></button><a href="mailto:#" class="fa-envelope">demomail@domail.com</a><a href="callto:#" class="fa-phone">+1 (126) 598-89-75</a> -->
+                <!-- <ul class="list-inline pull-right">
+                  <li><a href="#" class="fa-facebook"></a></li>
+                  <li><a href="#" class="fa-pinterest-p"></a></li>
+                  <li><a href="#" class="fa-twitter"></a></li>
+                  <li><a href="#" class="fa-google-plus"></a></li>
+                  <li><a href="#" class="fa-instagram"></a></li>
+                </ul> -->
+            <!--   </div>
+            </div> -->
+            <div class="rd-navbar-inner">
+
+              <!--RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+
+                <!--RD Navbar Toggle-->
+                <button data-rd-navbar-toggle=".rd-navbar" class="rd-navbar-toggle"><span></span></button>
+                <!--END RD Navbar Toggle-->
+
+                <!--RD Navbar Brand-->
+                <div class="rd-navbar-brand"><a href="/" class="brand-name"><b>Harkmed</b></a></div>
+                <!--END RD Navbar Brand-->
+              </div>
+              <!--END RD Navbar Panel-->
+
+              <div class="rd-navbar-nav-wrap"><a href="shop-cart.html" class=""></a>
+                <!--RD Navbar Search-->
+                 <!-- <div class="rd-navbar-search">
+                  <form action="search.php" method="GET" class="rd-navbar-search-form">
+                    <label class="rd-navbar-search-form-input">
+                      <input type="text" name="s" placeholder="Search.." autocomplete="off">
+                    </label>
+                    <button type="submit" class="rd-navbar-search-form-submit"></button>
+                  </form><span class="rd-navbar-live-search-results"></span>
+                  <button data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-live-search-results" class="rd-navbar-search-toggle"></button> -->
+                <!-- </div> -->
+                <!--END RD Navbar Search
+
+                <!--RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <li class="active"><a href="#aboutus1">ABOUT US</a></li>
+                  <li><a href="">WHAT WE TREAT</a>
+
+                    <!--RD Navbar Dropdown-->
+                    <ul class="rd-navbar-dropdown">
+                      <li>Acne</li>
+                      <li>Allergies</li>
+                      <li>Birth Control</li>
+                      <li>Bronchitis</li>
+                      <li>Cold & Cough</li>
+                      <li>Ear Pain/Infection</li>
+                      <li>Flu</li>
+                      <li>Herpes</li>
+                      <li>Pink Eye | Stye</li>
+                      <li>Rashes</li>
+                      <li>Seasonal Allergies</li>
+                      <li>Sinus Infection</li>
+                      <li>UTI</li>
+                      <li>Yeast Infection</li>
+                      <li>Click to view full list</li>
+
+                    </ul>
+                    <!--END RD Navbar Dropdown-->
+                    
+                  </li>
+                  <li><a class="link" href="/faq/">FAQ</a>
+                    <!-- <ul class="rd-navbar-dropdown">
+                      <li><a href="index-parallax.html">Header Parallax</a></li>
+                      <li><a href="index.html">Header Transparent</a></li>
+                      <li><a href="index-cent.html">Header Centre, Footer Light</a></li>
+                      <li><a href="index-min.html">Header Minimal, Footer Light</a></li>
+                      <li><a href="index-topbar.html">Header Corporate</a></li>
+                      <li><a href="index-sidebar.html">Header Hamburger Menu</a></li>
+                      <li><a href="index-cent-dark.html">Footer Centre Dark</a></li>
+                      <li><a href="index-min-dark.html">Footer Minimal Dark</a></li>
+                      <li><a href="index-wid.html">Footer Widget Light</a></li>
+                      <li><a href="index-wid-dark.html">Footer Widget Dark</a></li>
+                    </ul> -->
+                  </li>
+                  <li><a href="#">REGISTER | LOGIN</a>
+                    <ul class="rd-navbar-dropdown">
+                      <li><a class="link" href="../signup/">Register</a></li>
+                      <li><a class="link" href="../login/">Login</a></li>
+                    </ul>
+                  </li>
+                  
+              </div>
+            </div>
+          </nav>
+        </div>
+{% endblock %}
+
+
+
+{% block main %}  
+<style>
+
+    body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            color: #616161;
+            /*text-align: ;       */
+            padding-top: 130px;
+
+        }
+        .navbar.navbar-no-bg {
+            background-color: rgba(51, 51, 51, 0.9);
+        }
+        textarea, textarea.form-control {
+            border: 1px solid #5D5B5B;
+            font-size: 13px;
+            line-height: 15px;
+            padding: 10px 10px;
+        }
+
+        footer {
+            margin-top: 200px;
+
+        }
+
+        #div_id_title, #div_id_inquiry {
+            color: rgba(51, 51, 51, 0.9);
+            text-align: left ;
+        }
+
+        input[type="text"] {
+            border: 1px solid #353535;
+            color: #403F3F;
+            line-height: 6px;
+            transition: none;
+            
+
+        }
+
+        input[type="text"], textarea, textarea.form-control {
+            border: 1px solid #353535;
+            color: #403F3F ;
+        }
+
+        input[type="text"]:focus, textarea:focus, textarea.form-control:focus{
+             /*outline: 0; */
+             border: 1px solid #353535; 
+            -moz-box-shadow: none;
+             -webkit-box-shadow: none; 
+             box-shadow: none; 
+        }
+        label.control-label{
+            display: inline-block;
+            max-width: 100%;
+            margin-bottom: 3px;
+            font-weight: 500;
+            float: left;
+        }
+        a.button.secondaryAction{
+            color: #E84343;
+            text-decoration: none;
+            float: right;
+            font-size: 13px;
+            -o-transition: all .3s;
+            -moz-transition: all .3s;
+            -webkit-transition: all .3s;
+            -ms-transition: all .3s;
+            transition: all .3s;
+        }
+        label {
+            display: inline-block;
+            max-width: 100%;
+            margin-bottom: 5px;
+            font-weight: 700;
+            float: left;
+        }
+        .btn-danger {
+            color: #fff;
+            background-color: #e8643e;
+            border-color: #e8643e;
+            float: right;
+        }
+        .bottom {
+            border-bottom: 1px solid #ccc;
+        }
+        button.btn.btn-default {
+            float: right;
+        }
+
+</style>
+
+<div class="row">
+<div class="col-sm-4 col-sm-offset-4"> 
+<h4>{% trans "Register" %}</h4>
+</br>
+
+<!-- <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">log in</a>.{% endblocktrans %}</p> -->
+
+<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+  {% csrf_token %}
+  {{ form|crispy }}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  </br>
+  <button type="submit" class="btn btn-danger">{% trans "Submit" %}</button>
+</form>
+</br>
+</br>
+</br>
+<!-- <div class="bottom"></div> -->
+</br>
+</br>
+
+
+
+
+</div>
+</div>
+
+{% endblock %}

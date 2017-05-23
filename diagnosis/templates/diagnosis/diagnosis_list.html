@@ -1,0 +1,13 @@
+{% load i18n %}
+
+{% block main %}
+    {% if diagnosis %}
+        <ul>
+        {% for d in diagnosis %}
+            <li><a href="{% url 'diagnosis' d.name %}">{{ d.title }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        {% trans 'No diagnosis' %}
+    {% endif %}
+{% endblock %}

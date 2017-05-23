@@ -1,0 +1,259 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation">
+  <head>
+    <!--Site Title-->
+    <title>Harkmed</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+
+<!--Font-Awesome-->
+    <script src="https://use.fontawesome.com/3a79149099.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Baloo+Tamma|Work+Sans|Noto+Sans|Open+Sans:400,800|Cantarell" rel="stylesheet">
+
+    <!--Stylesheets-->
+    <link rel="icon" href='{% static "assets/images/favicon.ico" type="image/x-icon" %}'>
+
+     <!--Bootstrap-->
+    <link rel="stylesheet" href='{% static "assets/css/style.css" %}'>
+<!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/.."><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script><[endif]-->
+
+        <style>
+
+        .rd-navbar-brand .brand-name {
+          font-family: Cantarell;
+          color: #E43D3D;
+          font-size: 36px;
+
+        }
+
+        .page-footer .navbar-brand a {
+
+          color: #E43D3D;
+          font-family: Cantarell;
+        }
+
+        .intro1 {
+            font-size: 32px;
+        }
+        .welcomeq {
+            font-size: 23px;
+            color: #E43D3D;
+        }
+
+        .btn {
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-family: Montserrat, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            touch-action: manipulation;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            background-image: none;
+            border: 3px solid #ccc;
+            white-space: nowrap;
+            padding: 11px 30px;
+            font-size: 17px;
+            line-height: 24px;
+            border-radius: 5px;
+            transition: .2s all ease;
+        }
+        .ins1{
+          color: #E43D3D;
+        }
+
+        .ul1 {
+          font-size: 19px;
+        }
+
+        .ul2 {
+          color: #61676D;
+          font-size: 19px;
+        }
+
+        .tes1 {
+          color: #E43D3D;
+          font-size: 23px;
+
+        }
+        hr {
+          width:100%;
+          height:1px;
+          background: #C7C7C7;
+        }
+
+
+
+        </style>
+
+  </head>
+
+  <body>
+
+
+    <!--The Main Wrapper-->
+    <div class="page">
+      <!--
+      ========================================================
+                              HEADER
+      ========================================================
+      -->
+      {% block navigation %}
+      <header class="page-header">
+
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap top-panel-none-items">
+          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-hover-on="false" data-stick-up="false" data-sm-layout="rd-navbar-fullwidth" data-sm-device-layout="rd-navbar-fullwidth" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static">
+            <!-- <div class="rd-navbar-top-panel">
+              <div class="rd-navbar-inner">
+                <button data-rd-navbar-toggle=".list-inline, .fa-envelope, .fa-phone, .fa-shopping-cart" class="rd-navbar-collapse-toggle"><span></span></button><a href="mailto:#" class="fa-envelope">demomail@domail.com</a><a href="callto:#" class="fa-phone">+1 (126) 598-89-75</a> -->
+                <!-- <ul class="list-inline pull-right">
+                  <li><a href="#" class="fa-facebook"></a></li>
+                  <li><a href="#" class="fa-pinterest-p"></a></li>
+                  <li><a href="#" class="fa-twitter"></a></li>
+                  <li><a href="#" class="fa-google-plus"></a></li>
+                  <li><a href="#" class="fa-instagram"></a></li>
+                </ul> -->
+            <!--   </div>
+            </div> -->
+            <div class="rd-navbar-inner">
+
+              <!--RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+
+                <!--RD Navbar Toggle-->
+                <button data-rd-navbar-toggle=".rd-navbar" class="rd-navbar-toggle"><span></span></button>
+                <!--END RD Navbar Toggle-->
+
+                <!--RD Navbar Brand-->
+                <div class="rd-navbar-brand"><a href="/" class="brand-name"><b>Harkmed</b></a></div>
+                <!--END RD Navbar Brand-->
+              </div>
+              <!--END RD Navbar Panel-->
+
+              <div class="rd-navbar-nav-wrap"><a href="shop-cart.html" class=""></a>
+                <!--RD Navbar Search-->
+                 <!-- <div class="rd-navbar-search">
+                  <form action="search.php" method="GET" class="rd-navbar-search-form">
+                    <label class="rd-navbar-search-form-input">
+                      <input type="text" name="s" placeholder="Search.." autocomplete="off">
+                    </label>
+                    <button type="submit" class="rd-navbar-search-form-submit"></button>
+                  </form><span class="rd-navbar-live-search-results"></span>
+                  <button data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-live-search-results" class="rd-navbar-search-toggle"></button> -->
+                <!-- </div> -->
+                <!--END RD Navbar Search
+
+                <!--RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <li class="active"><a href="#aboutus1">ABOUT US</a></li>
+                  <li><a href="">WHAT WE TREAT</a>
+
+                    <!--RD Navbar Dropdown-->
+                    <ul class="rd-navbar-dropdown">
+                      {% for diagnosis in diagnosis_list %}
+                        <li>
+                          <a href="/diagnosis/{{diagnosis.name}}">{{diagnosis.title}}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                    <!--END RD Navbar Dropdown-->
+
+                  </li>
+                  <li><a class="link" href="/faq/">FAQ</a>
+                    <!-- <ul class="rd-navbar-dropdown">
+                      <li><a href="index-parallax.html">Header Parallax</a></li>
+                      <li><a href="index.html">Header Transparent</a></li>
+                      <li><a href="index-cent.html">Header Centre, Footer Light</a></li>
+                      <li><a href="index-min.html">Header Minimal, Footer Light</a></li>
+                      <li><a href="index-topbar.html">Header Corporate</a></li>
+                      <li><a href="index-sidebar.html">Header Hamburger Menu</a></li>
+                      <li><a href="index-cent-dark.html">Footer Centre Dark</a></li>
+                      <li><a href="index-min-dark.html">Footer Minimal Dark</a></li>
+                      <li><a href="index-wid.html">Footer Widget Light</a></li>
+                      <li><a href="index-wid-dark.html">Footer Widget Dark</a></li>
+                    </ul> -->
+                  </li>
+                  <li><a href="#">REGISTER | LOGIN</a>
+                    <ul class="rd-navbar-dropdown">
+                      <li><a class="link" href="../accounts/signup/">Register</a></li>
+                      <li><a class="link" href="../accounts/login/">Login</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!--END RD Navbar-->
+      </header>
+      {% endblock %}
+
+      <!--
+      ========================================================
+                              CONTENT
+      ========================================================
+      -->
+      {% block main %}
+
+      {% endblock %}
+      <!--
+      ========================================================
+                              FOOTER
+      ========================================================
+      -->
+      {% block footer %}
+      <footer class="page-footer footer-centered text-center">
+        <section class="footer-content">
+          <div class="container">
+            <div class="navbar-brand"><a href="index.html">Harkmed</a></div>
+            <p class="big">We believe in cost effective and efficient medical care.</p>
+            <ul class="list-inline">
+              <li><a href="#" class="fa-facebook"></a></li>
+              <li><a href="#" class="fa-twitter"></a></li>
+              <li><a href="#" class="fa-google-plus"></a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="copyright">
+          <div class="container">
+            <p>&#169; <span id="copyright-year"></span> All Rights Reserved <a href="terms.html">Terms of Use and Privacy Policy</a></p>
+          </div>
+        </section>
+      </footer>
+      {% endblock %}
+    </div>
+    <!--Core Scripts-->
+    <script src='{% static "assets/js/core.min.js" %}' ></script>
+    <!--jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <!--Include all compiled plugins (below), or include individual files as needed-->
+    <script src='{% static "assets/js/bootstrap.min.js" %}' ></script>
+    <script src='{% static "assets/js/jquery.ui.totop.min.js" %}'></script>
+    <script src='{% static "assets/js/jquery.rd-navbar.min.js" %}'></script>
+    <script src='{% static "assets/js/jquery.swiper.min.js" %}'></script>
+    <script src='{% static "assets/js/jquery.countTo.js" %}'></script>
+    <script src='{% static "assets/js/jquery.counter.js" %}'></script>
+    <script src='{% static "assets/js/jquery.owl-carousel.js" %}'></script>
+    <script src='{% static "assets/js/jquery.search.min.js" %}'></script>
+    <script src='{% static "assets/js/jquery.easy-responsive-tabs.min.js" %}'></script>
+    <script src='{% static "assets/js/mailform/jquery.rd-input-label.js" %}'></script>
+
+
+    <!--Additional Functionality Scripts-->
+    <script src='{% static "assets/js/script.js" %}'></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+    {% block script %}
+    {% endblock %}
+  </body>
+</html>

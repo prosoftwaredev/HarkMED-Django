@@ -1,0 +1,397 @@
+{% extends "base/index.html" %}
+
+{% block navigation %}
+    <!--The Main Wrapper-->
+    <div class="page">
+      <!--
+      ========================================================
+                              HEADER
+      ========================================================
+      -->
+      <header class="page-header">
+
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap top-panel-none-items">
+          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-hover-on="false" data-stick-up="false" data-sm-layout="rd-navbar-fullwidth" data-sm-device-layout="rd-navbar-fullwidth" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static">
+            <!-- <div class="rd-navbar-top-panel">
+              <div class="rd-navbar-inner">
+                <button data-rd-navbar-toggle=".list-inline, .fa-envelope, .fa-phone, .fa-shopping-cart" class="rd-navbar-collapse-toggle"><span></span></button><a href="mailto:#" class="fa-envelope">demomail@domail.com</a><a href="callto:#" class="fa-phone">+1 (126) 598-89-75</a> -->
+                <!-- <ul class="list-inline pull-right">
+                  <li><a href="#" class="fa-facebook"></a></li>
+                  <li><a href="#" class="fa-pinterest-p"></a></li>
+                  <li><a href="#" class="fa-twitter"></a></li>
+                  <li><a href="#" class="fa-google-plus"></a></li>
+                  <li><a href="#" class="fa-instagram"></a></li>
+                </ul> -->
+            <!--   </div>
+            </div> -->
+            <div class="rd-navbar-inner">
+
+              <!--RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+
+                <!--RD Navbar Toggle-->
+                <button data-rd-navbar-toggle=".rd-navbar" class="rd-navbar-toggle"><span></span></button>
+                <!--END RD Navbar Toggle-->
+
+                <!--RD Navbar Brand-->
+                <div class="rd-navbar-brand"><a href="/" class="brand-name"><b>Harkmed</b></a></div>
+                <!--END RD Navbar Brand-->
+              </div>
+              <!--END RD Navbar Panel-->
+
+              <div class="rd-navbar-nav-wrap"><a href="shop-cart.html" class=""></a>
+                <!--RD Navbar Search-->
+                 <!-- <div class="rd-navbar-search">
+                  <form action="search.php" method="GET" class="rd-navbar-search-form">
+                    <label class="rd-navbar-search-form-input">
+                      <input type="text" name="s" placeholder="Search.." autocomplete="off">
+                    </label>
+                    <button type="submit" class="rd-navbar-search-form-submit"></button>
+                  </form><span class="rd-navbar-live-search-results"></span>
+                  <button data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-live-search-results" class="rd-navbar-search-toggle"></button> -->
+                <!-- </div> -->
+                <!--END RD Navbar Search
+
+                <!--RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <li class="active"><a href="#aboutus1">ABOUT US</a></li>
+                  <li><a href="">WHAT WE TREAT</a>
+
+                    <!--RD Navbar Dropdown-->
+                    <ul class="rd-navbar-dropdown">
+                      <li>Acne</li>
+                      <li>Allergies</li>
+                      <li>Birth Control</li>
+                      <li>Bronchitis</li>
+                      <li>Cold & Cough</li>
+                      <li>Ear Pain/Infection</li>
+                      <li>Flu</li>
+                      <li>Herpes</li>
+                      <li>Pink Eye | Stye</li>
+                      <li>Rashes</li>
+                      <li>Seasonal Allergies</li>
+                      <li>Sinus Infection</li>
+                      <li>UTI</li>
+                      <li>Yeast Infection</li>
+                      <li>Click to view full list</li>
+
+                    </ul>
+                    <!--END RD Navbar Dropdown-->
+                    
+                  </li>
+                  <li><a class="link" href="/faq/">FAQ</a>
+                    <!-- <ul class="rd-navbar-dropdown">
+                      <li><a href="index-parallax.html">Header Parallax</a></li>
+                      <li><a href="index.html">Header Transparent</a></li>
+                      <li><a href="index-cent.html">Header Centre, Footer Light</a></li>
+                      <li><a href="index-min.html">Header Minimal, Footer Light</a></li>
+                      <li><a href="index-topbar.html">Header Corporate</a></li>
+                      <li><a href="index-sidebar.html">Header Hamburger Menu</a></li>
+                      <li><a href="index-cent-dark.html">Footer Centre Dark</a></li>
+                      <li><a href="index-min-dark.html">Footer Minimal Dark</a></li>
+                      <li><a href="index-wid.html">Footer Widget Light</a></li>
+                      <li><a href="index-wid-dark.html">Footer Widget Dark</a></li>
+                    </ul> -->
+                  </li>
+                  <li><a href="#">REGISTER | LOGIN</a>
+                    <ul class="rd-navbar-dropdown">
+                      <li><a class="link" href="../accounts/signup/">Register</a></li>
+                      <li><a class="link" href="../accounts/login/">Login</a></li>
+                    </ul>
+                  </li>
+                  
+              </div>
+            </div>
+          </nav>
+        </div>
+
+         {% endblock %}
+        <!--END RD Navbar-->
+        {% block main %}
+        
+        <div class="main">
+            <div class="container">
+                <h1 class="page-title text-center">Frequently Asked Questions</h1>
+            </div><!-- End .container -->
+
+            <div class="faq-section">
+                <div class="container">
+                    <ul class="nav nav-tabs nav-faq nav-stacked" role="tablist">
+                        <li role="presentation" class="active"><a href="#diagnosis-tab" aria-controls="diagnosis-tab" role="tab" data-toggle="tab">Diagnosis and Treatment</a></li>
+                        <li role="presentation"><a href="#payment-tab" aria-controls="payment-tab" role="tab" data-toggle="tab">Payment and Insurance</a></li>
+                        <li role="presentation"><a href="#nurses-tab" aria-controls="nurses-tab" role="tab" data-toggle="tab">Our Nurse Practitioners</a></li>
+                        <li role="presentation"><a href="#safety-tab" aria-controls="safety-tab" role="tab" data-toggle="tab">Four Point Safety</a></li>
+                        <li role="presentation"><a href="#account-tab" aria-controls="account-tab" role="tab" data-toggle="tab">Account</a></li>
+                        <li role="presentation"><a href="#states-tab" aria-controls="states-tab" role="tab" data-toggle="tab">States We Serve</a></li>
+                        <li role="presentation"><a href="#partners-tab" aria-controls="partners-tab" role="tab" data-toggle="tab">Clinical Partners</a></li>
+                        <li role="presentation"><a href="#security-tab" aria-controls="security-tab" role="tab" data-toggle="tab">Data Security</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="diagnosis-tab">
+                            <h3>What types of conditions do you diagnose and treat?</h3>
+                            <p>We treat common conditions like sinus infections, bladder infections, pink eye, acne and more. See the full list of&nbsp;<a href="#">conditions we treat</a>. And, if we can't treat you, it's free.</p>
+                            <h3>What if I'm not feeling better?</h3>
+                            <p>Click the Request a Callback button in your treatment plan if your symptoms haven't improved or worsened; we'll adjust your plan for free.</p>
+                            <h3>Do I need to make an appointment?</h3>
+                            <p>No, virtuwell is 24/7! Simply click Start Diagnosis to start your online interview and one of our nurse practitioners will create a treatment plan for you, usually within 30 minutes.</p>
+                            <h3>What is included in my $45 visit fee?</h3>
+                            <p>A virtuwell visit includes a detailed and personalized treatment plan <a href="#">(view sample)</a>. The treatment plan includes your diagnosis, recommended medications – including a prescription if you need one, what to expect when following your treatment plan, and future prevention tips. You can request a callback from our nurse practitioners regarding your visit at any time. Rest assured that any follow-up care related to the visit is always included, free of charge. And remember, there is no cost if virtuwell can’t treat you.</p>
+                            <h3>How do I select my favorite pharmacy?</h3>
+                            <p>We provide a pharmacy locator during checkout. We recommend you check the hours of your preferred pharmacy to ensure it will be open when we send your prescription.</p>
+                            <h3>Can you really diagnose me without seeing me in person?</h3>
+                            <p>Yes, and here's why, many simple conditions are accurately diagnosed with a thorough medical interview, and in some cases a picture as well. These are the ones you'll find in our service. An online diagnosis isn't right for everything, of course, and we don't treat conditions requiring a physical exam or a lab test, for example. But for conditions we do treat, diagnosing them online is very effective.</p>
+                            <p>Our service is powered by software that asks you simple questions about your symptoms, how they changed over time and the severity of your problem. Our interactive, rules-based interview also collects your complete medical history to make sure there isn't anything more serious going on. Then your answers are presented to our board-certified nurse practitioners who complete your personal diagnosis and select an effective treatment plan for you to ensure we don't miss a thing. If your answers show that you need to see someone in person, we'll tell you.</p>
+
+                            <h3>Can I complete my interview with a phone call?</h3>
+                            <p>No, your virtuwell interview should be done on a desktop or laptop computer or using our mobile website on your mobile device.</p>
+                            <h3>What types of prescriptions can you prescribe?</h3>
+                            <p>Our nurse practitioners can prescribe the medications proven to treat and reduce symptoms for most common medical conditions. Depending on the condition, this may include over-the-counter and prescription strength medications like antibiotics or antivirals.</p>
+                            <h3>What don't you prescribe?</h3>
+                            <p>We don't currently prescribe or refill lifestyle medications (e.g. erectile dysfunction), anxiety or depression medications, smoking cessation medications or substance that can be addictive and are controlled by the Drug Enforcement Agency (e.g. narcotics).</p>
+                            <h3>Can I request a refill of my prescription?</h3>
+                            <p>Yes, we can refill virtuwell prescriptions, simply log into your Treatment Plan and Request a Callback. Some prescriptions may require a new interview to determine how your condition has improved.</p>
+                            <h3>Can I have a note for work or school?</h3>
+                            <p>Yes, we're happy to provide an excuse note! Simply email us at <a href="mailto:experience@virtuwell.com">experience@virtuwell.com</a>.</p>
+                            <h3>Can I be treated for two conditions at once?</h3>
+                            <p>Yes, we can treat you for multiple conditions in one treatment plan if they are related such as an ear pain and a cold.  For two separate conditions such as acne and flu, we'll ask that you complete two separate interviews so we can create two unique treatment plans.</p>
+                            <h3>Does virtuwell treat children?</h3>
+                            <p>Yes, in general we serve ages 2-100. However, the ability to treat a child may be tied to the condition. For example, we can treat an infant for diaper rash, but Lyme disease requires the child to be 8 or older. Using your answers about the child's symptoms, virtuwell will help determine if online care is appropriate for the age condition.</p>
+                        </div><!-- End .tab-pane -->
+
+                        <div role="tabpanel" class="tab-pane" id="payment-tab">
+                            <h3>How much does virtuwell cost?</h3>
+                            <p>Using virtuwell costs $45 per visit. We also bill insurance, which may lower your payment.</p>
+
+                            <h3>What is the virtuwell guarantee?</h3>
+                            <p>Although no one can guarantee your health, we can guarantee that if you're not completely satisfied with your experience – for any reason – we'll refund your money.  That's the virtuwell guarantee.   Simply email us at <a href="mailto:experience@virtuwell.com">experience@virtuwell.com</a> to request your refund.</p>
+
+                            <h3>Do I get charged even if you can't help me?</h3>
+                            <p>No, we only charge your credit card or bill insurance if we give you a treatment plan.</p>
+                            <h3>When will you charge my card?</h3>
+                            <p>If you have insurance, we'll bill that first; your card will only be charged after your insurance determines your co-pay responsibility. If you don't enter insurance, your card will be charged after you receive your treatment plan.</p>
+
+                            <h3>How does billing work if I have insurance?</h3>
+                            <p>We'll collect your insurance during checkout and submit a claim on your behalf. We'll only charge your card for any remaining balance after we've heard back from your insurance.</p>
+
+                            <h3>Do I need insurance?</h3>
+                            <p>No, you can always pay by credit card. We'll collect your payment information during checkout. You'll only be charged once you receive your treatment plan.</p>
+
+                            <h3>Which insurance companies do you bill?</h3>
+                            <p>We currently submit claims to the insurance companies listed. Please call the number listed to contact your member services about specific coverage questions.</p>
+                            <ul>
+                                <li>Aetna: 888-632-3862</li>
+                                <li>Anthem: 866-791-2292</li>
+                                <li>Assurant: 877-284-4727</li>
+                                <li>BCBS: 877-827-5258</li>
+                                <li>CIGNA: 800-882-4462</li>
+                                <li>EssentiaCare: 855-432-7025</li>
+                                <li>GHC-SCW: 608-251-4526</li>
+                                <li>HealthPartners: 952-883-5000</li>
+                                <li>HealthPlus: 800-332-9161</li>
+                                <li>Humana: 800-558-4444</li>
+                                <li>Medica: 952-945-8000</li>
+                                <li>Olmsted County: 800-325-6859</li>
+                                <li>Preferred One: 763-847-4400</li>
+                                <li>UCare Choices: 877-903-0070</li>
+                                <li>UMR: 800-826-9781</li>
+                                <li>United Healthcare: 877-842-3210</li>
+                                <li>WPS: 800-765-4977</li>
+                            </ul>
+
+                            <h3>What if my insurance isn't listed?</h3>
+                            <p>You can use your credit card to pay for your visit if your insurance company doesn't currently accept claims for us. A virtuwell visit is only $45, never more.</p>
+
+                            <h3>How do I print my billing receipt?</h3>
+                            <p>Simply log into your virtuwell account on a desktop or laptop computer, click Records and select your billing receipt next to your treatment plan.</p>
+
+                            <h3>How long does it take to hear back from insurance?</h3>
+                            <p>Most insurers settle within 45 days, but it may vary.</p>
+
+                            <h3>Can I use my HSA card?</h3>
+                            <p>Yes, you can enter your Health Savings Account card on the credit card screen during checkout.</p>
+
+                            <h3>How do you handle claims if I have a Health Savings or Health Reimbursement account?</h3>
+                            <p>Health savings and reimbursement accounts vary a lot, even accounts from the same insurer. Please check with your insurer for details on how your account will work with virtuwell.</p>
+
+                            <h3>Why do I have a double payment on my Health Reimbursement Account?</h3>
+                            <p>We send a claim to your insurance company who will process your visit. Once we receive their response, we'll charge your credit card for the remaining balance you owe. Next, your insurance company will submit the amount you paid out of pocket to your HSA, FSA or HRA account. They may send you a check personally or send the additional payment to us. If we receive a payment we'll refund your credit card and email you about the refund.</p>
+
+                            <h3>Are virtuwell services eligible for Flexible Savings Accounts?</h3>
+                            <p>Yes, virtuwell is an FSA eligible expense as defined by the IRS.</p>
+
+                            <h3>How can I submit my secondary insurance?</h3>
+                            <p>To add secondary insurance please email us at <a href="mailto:experience@virtuwell.com">experience@virtuwell.com</a>.</p>
+
+                            <h3>How do I update my insurance?</h3>
+                            <p>Please email us at <a href="mailto:experience@virtuwell.com">experience@virtuwell.com</a> to update your insurance.</p>
+
+                            <h3>How do I change my credit card?</h3>
+                            <p>Please email us at <a href="mailto:experience@virtuwell.com">experience@virtuwell.com</a> to change your credit card information.</p>
+
+                            <h3>Is the prescription included in the $45 or a separate cost?</h3>
+                            <p>No, you will pay for your prescription at the pharmacy, just like a typical clinic visit.</p>
+
+                            <h3>Does my insurance work at the pharmacy too?</h3>
+                            <p>Yes, your insurance should work at your pharmacy much like a typical clinic visit. For specific coverage questions, please contact your carrier's member services.</p>
+
+                            <h3>Can I use someone else's credit card?</h3>
+                            <p>Yes, we accept any credit card or debit card as a form of payment.</p>
+
+                            <h3>What do I do if I don't have a credit card?</h3>
+                            <p>Currently virtuwell can only accept payment via credit or debit card. We suggest a loadable gift credit card if you don't have a credit or debit card.</p>
+
+                            <h3>I don't feel comfortable sharing my credit card information online, what do I do?</h3>
+                            <p>virtuwell stores your payment information on a secure site separate from your health information. We currently only accept credit cards as a form of payment.</p>
+
+                            <h3>What if my card is declined?</h3>
+                            <p>No worries, your card can be declined for several reasons. We'll send you an email right away to help you update your payment information on our website. You can also call us at 1-877-440-1001 on Monday – Friday from 8 a.m. to 5 p.m. CST to update your information.</p>
+                        </div><!-- End .tab-pane -->
+
+                        <div role="tabpanel" class="tab-pane" id="nurses-tab">
+                            <h3>Who are the virtuwell nurse practitioners?</h3>
+                            <p>Our nurse practitioners have a Master of Science degree in nursing and have achieved U.S. national board certification. We specialize in treating people online by following nationally recognized clinical guidelines and using specifically engineered software that helps us identify when your condition requires an in-person visit with a doctor or specialist. This makes it possible for us to deliver safe, efficient and convenient care to our customers.</p>
+
+                            <h3>What kinds of care can your nurse practitioners provide?</h3>
+                            <p>Our nurse practitioners are trained to diagnose and treat common illnesses, injuries and skin conditions, providing some of the same care given by a doctor.</p>
+                            <p>Nurse practitioners at virtuwell can:</p>
+
+                            <ul class="disc-list">
+                                <li>Diagnose and treat common illnesses and injuries</li>
+                                <li>Prescribe medications</li>
+                                <li>Obtain medical histories</li>
+                                <li>Perform assessments</li>
+                                <li>Screen and refer patients to specialists and other health care providers</li>
+                                <li>Counsel and teach about health and nutrition</li>
+                            </ul>
+                        </div><!-- End .tab-pane -->
+
+                        <div role="tabpanel" class="tab-pane" id="safety-tab">
+                            <h3>virtuwell: Our Four-Point Approach to Safety</h3>
+                            <p>With any service, real trust is earned by how people experience it.</p>
+                            <p>We're proud that after more than 100,000 virtuwell treatment plans, 98 percent of our customers say they'd recommend us to a family member or friend.</p>
+                            <p>We'll never stop working to keep and strengthen that trust, and we base our approach on these four points:</p>
+
+                            <h3>1. There is a skilled, experienced certified nurse practitioner behind every treatment plan, every time.</h3>
+                            <p>We use an online guided interview to learn about your condition, but from there it's in human hands. Our nurse practitioners review each case and use their expertise and judgment to recommend the right treatment. If they need more information or want to make sure you understand something, they'll call (that actually happens in about half of our cases). And they're always available by phone, for free, if you have a question or want to talk something through.</p>
+
+                            <h3>2. If we can't treat a condition safely, we won't treat it.</h3>
+                            <p>Online care isn't right for everything. That's why we treat only a set number of simple conditions for which our approach has been proven to be safe and effective.</p>
+
+                            <h3>3. You get only appropriate prescriptions.</h3>
+                            <p>When needed, we prescribe simple medications like antibiotics and antivirals, and we do that safely and effectively. In fact, a recent study of appropriate antibiotic prescribing revealed virtuwell's compliance was actually higher than the national average. We aren't an internet pharmacy, and we don't write prescriptions for lifestyle medications or substances that can be addictive and are controlled by the Drug Enforcement Agency.</p>
+
+                            <h3>4. Your satisfaction is guaranteed.</h3>
+                            <p>virtuwell was designed to be safe, quick and convenient because we know your time is valuable. If you don't have a great experience, let us know. We'll do everything we can to make it better. And although no one can ever guarantee your health, if you're not completely satisfied, for any reason, we'll refund your money.</p>
+                        </div><!-- End .tab-pane -->
+
+                        <div role="tabpanel" class="tab-pane" id="account-tab">
+                            <h3>I forgot which email address I used, how can I recover it?</h3>
+                            <p>Give us a call at 1-877-440-1001, we're happy to help you find the right log-in information.</p>
+
+                            <h3>I forgot my password, how do I change it?</h3>
+                            <p>Go to the log-in screen and select the "Forgot Password" link. After you enter your email address, we'll send a password reset message to your inbox. You can click on the link in the message to update your new password.</p>
+
+                            <h3>When do I create my account?</h3>
+                            <p>Once we determined we can treat you, you'll create an account including your contact, insurance, pharmacy and payment information during checkout.</p>
+
+                            <h3>Can my partner and I use the same account?</h3>
+                            <p>No. A virtuwell account is your medical record with us. One person per account ensures your safety and privacy.</p>
+
+                            <h3>Can my partner and I use the same email address for our separate accounts?</h3>
+                            <p>No. A virtuwell account is your medical record with us. We assign one email address per medical record to ensure your safety and privacy.</p>
+
+                            <h3>If I have a virtuwell account, can I treat my child?</h3>
+                            <p>Yes. Children under 18 years old can have a virtuwell account under one parent's name. Log in to your account and begin the interview; you'll create your child's account during checkout.</p>
+
+                            <h3>I don't have a virtuwell account, can I treat my child?</h3>
+                            <p>Yes. Children under 18 years old can have a virtuwell account under one parent's name. If you're a first time user, start your child's interview and you'll create both you and your child's account during checkout.</p>
+
+                            <h3>My child has turned 18. What does that mean for his/her account?</h3>
+                            <p>By law, once a child turns 18, they will need to create their own virtuwell account. If you like, you can contact customer service at 1-877-440-1001 and we can transfer information from your old account to your new account.</p>
+
+                            <h3>My account uses an email address I don't have access to, can I change it?</h3>
+                            <p>Yes. Simply log-in on a desktop or laptop computer with the existing email address and update your Profile with the new one. Please do this before you start your interview to ensure all the notifications for your visit are sent to the right place.</p>
+
+                            <h3>The email address for my account is no longer accessible and I forgot my password, how do I log in?</h3>
+                            <p>Call us 24/7 at 1-877-440-1001 and we'll update your email address for you. Once your email address is updated, you'll be able to change your password using the Forgot Password link at log-in.</p>
+
+                            <h3>Can I use multiple emails for my virtuwell account?</h3>
+                            <p>No. Currently, all virtuwell accounts can only use one email address for log-in and notifications. To change your email address, log-in with your existing email on a desktop or laptop computer and update your Profile with a different one.</p>
+                        </div><!-- End .tab-pane -->
+
+                        <div role="tabpanel" class="tab-pane" id="states-tab">
+                            <h3>In which states does virtuwell operate?</h3>
+                            <p>We're currently available in several states, but hope to expand to more soon! If you're interested in being notified when we're available in your state, email us at <a href="mailto:experience@virtuwell.com">experience@virtuwell.com</a>.  Current states we operate in:</p>
+
+                            <ul>
+                                <li>Arizona</li>
+                                <li>California</li>
+                                <li>Colorado</li>
+                                <li>Connecticut</li>
+                                <li>Iowa</li>
+                                <li>Michigan</li>
+                                <li>Minnesota</li>
+                                <li>New York</li>
+                                <li>North Dakota</li>
+                                <li>Pennsylvania</li>
+                                <li>Virginia</li>
+                                <li>Wisconsin</li>
+                            </ul>
+
+                            <h3>Can I use virtuwell while I'm traveling?</h3>
+                            <p>Yes. During the interview and checkout process just specify the state you'll be traveling to and the pharmacy where you'd like to pick up your medication during your trip. However, remember you must live in one of the states that virtuwell operates in or be traveling to one of these states to use our service.</p>
+                        </div><!-- End .tab-pane -->
+
+                        <div role="tabpanel" class="tab-pane" id="partners-tab">
+                            <h3>Who are your clinical partners?</h3>
+                            <p>We're partnering with likeminded organizations to bring you more affordable and convenient care, whether it's for simple things or something more complicated. We're collaborating on leading edge clinical protocols, developing approaches to consumer education and ways to inform consumers of services each provides, and creating a simple experience for our customers.</p>
+
+                            <p>Our Clinical Partners include:</p>
+                            <p>
+                                <a href="#">
+                                    <img src="assets/images/faq/healthpartners-clinical-partner.png" alt="Health Partners" class="img-responsive">
+                                </a>
+                            </p>
+                            <p>
+                                <a href="#">
+                                    <img src="assets/images/faq/parknicollet-clinical-partner.png" alt="Park Nicollet" class="img-responsive">
+                                </a>
+                            </p>
+                            <p>
+                                <a href="#">
+                                    <img src="assets/images/faq/essentiahealth-clinical-partner.png" alt="Essentia Health" class="img-responsive">
+                                </a>
+                            </p>
+                            <p>
+                                <a href="#">
+                                    <img src="assets/images/faq/ghc-clinical-partner.png" alt="Group Health Cooperative" class="img-responsive">
+                                </a>
+                            </p>
+                            <p>We're proud to partner with them.</p>
+                        </div><!-- End .tab-pane -->
+
+                        <div role="tabpanel" class="tab-pane" id="security-tab">
+                            <h3>How safe is my personal information?</h3>
+                            <p>Your personal information is safe and secure at virtuwell. We maintain a variety of physical, electronic and procedure safeguards designed to protect your personal information and prevent unauthorized access. The moment you log on to the virtuwell web site, we encrypt your user name and password using the highest level of security, industry standard SSL (Secure Socket Layer) technology. </p>
+
+                            <h3>Is my credit card information safe?</h3>
+                            <p>Yes, we store all credit card information on a separate and secure server.  We think it's important to keep health and payment information separate to protect your privacy.</p>
+
+                            <h3>Do you share my information?</h3>
+                            <p>We will never sell your information or share it with anyone without your written consent. Our&nbsp;<a href="#">Terms of Use</a>&nbsp;gives more information on how we protect the personal information provided through our website.</p>
+
+                            <h3>How safe is your website?</h3>
+                            <p>Because we collect personal health information, virtuwell is a safe and secure website from the moment you visit our homepage. Our site uses Hypertext Transfer Protocol Secure (HTTPS) on all of our pages.  This provides the highest level of security which combines industry standard Secure Socket Layer (SSL) technology on every page. In plain talk, this means the content you enter on this website is encrypted and cannot be read by someone trying to steal your private information.  We further protect your personal information by requiring an individualized account and password, ensuring timed log-off from our site, and our website is Norton Secured to provide constant surveillance to make sure our site is as safe as it can be.</p>
+                        </div><!-- End .tab-pane -->
+                    </div><!-- End .tab-content -->
+                            
+                </div><!-- End .container -->
+            </div><!-- End .faq-section -->
+        </div><!-- End .main -->
+
+        {% endblock %}
+
+    </body>
+</html>

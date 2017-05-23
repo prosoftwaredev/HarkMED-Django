@@ -1,0 +1,7 @@
+{% extends "base/base.html" %}
+{% load i18n %}
+
+
+{% block main %}
+    {% include "diagnosis/diagnosis_form.html" with diagnosis=diagnosis %}
+{% endblock %}

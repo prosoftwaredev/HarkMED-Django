@@ -1,0 +1,311 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation">
+  <head>
+    <!--Site Title-->
+    <title>Harkmed</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+
+<!--Font-Awesome-->
+    <script src="https://use.fontawesome.com/3a79149099.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Baloo+Tamma|Work+Sans|Noto+Sans|Open+Sans:400,800|Cantarell" rel="stylesheet">
+
+    <!--Stylesheets-->
+    <link rel="icon" href='{% static "assets/images/favicon.ico" type="image/x-icon" %}'>
+
+     <!--Bootstrap-->
+    <link rel="stylesheet" href='{% static "assets/css/style.css" %}'>
+     <link rel="stylesheet" href='{% static "assets/bootstrap/css/bootstrap.min.css" %}'>
+<!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/.."><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script><[endif]-->
+
+        <style>
+
+        .rd-navbar-brand .brand-name {
+          font-family: Cantarell;
+          color: #E43D3D;
+          font-size: 36px;
+
+        }
+
+        .page-footer .navbar-brand a {
+
+          color: #E43D3D;
+          font-family: Cantarell;
+        }
+
+        .intro1 {
+            font-size: 32px;
+        }
+        .welcomeq {
+            font-size: 23px;
+            color: #E43D3D;
+        }
+
+        .btn {
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-family: Montserrat, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            touch-action: manipulation;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            background-image: none;
+            border: 3px solid #ccc;
+            white-space: nowrap;
+            padding: 11px 30px;
+            font-size: 17px;
+            line-height: 24px;
+            border-radius: 5px;
+            transition: .2s all ease;
+        }
+        .ins1{
+          color: #E43D3D;
+        }
+
+        .ul1 {
+          font-size: 19px;
+        }
+
+        .ul2 {
+          color: #61676D;
+          font-size: 19px;
+        }
+
+        .tes1 {
+          color: #E43D3D;
+          font-size: 23px;
+
+        }
+        hr { 
+          width:100%; 
+          height:1px; 
+          background: #C7C7C7;
+        }
+
+
+
+        </style>
+    
+  </head>
+
+  <body>
+
+
+    <!--The Main Wrapper-->
+    <div class="page">
+      {% block main %}
+      <main class="page-content">
+        <section>
+          <!--Swiper-->
+          <div data-autoplay="5000" data-slide-effect="fade" data-loop="false" class="swiper-container swiper-slider">
+            <div class="jumbotron text-center">
+              <h3 class="welcomeq">Welcome, how can we help you today?</h3></br>
+              <h2 class="intro1">Our board-certified doctors are ready </br> to make a diagnosis and prescribe medications.</h2>
+              <p class="big">You only pay if we can help you. <br>How much? $32. No hidden fees. Simple.</p><div class='btn-group-variant'> <a class='btn btn-default round-xl btn-sm' href='#clinical1'>Learn More</a> <a class='btn btn-default round-xl btn-sm' href='#'>Doc, help me!</a></div>
+            </div>
+            <div class="swiper-wrapper">
+              <div data-slide-bg="images/header-1.jpg" class="swiper-slide">
+                <div class="swiper-slide-caption"></div>
+              </div>
+              <div data-slide-bg="images/header-3.jpg" class="swiper-slide">
+                <div class="swiper-slide-caption"></div>
+              </div>
+              <div data-slide-bg="images/header-4.jpg" class="swiper-slide">
+                <div class="swiper-slide-caption"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Start section-->
+        <section class="well well-sm bg-lighter relative text-center" id="clinical1">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-lg-offset-3">
+                <h1 class="text-bold">The Clinical Process</h1>
+                <p class="lead">
+                  Our goal is to provide cost effective medical care, save time, and make you feel better sooner. We will only treat you online if we thinks it is safe.
+                </p>
+              </div>
+            </div>
+
+            <div class="row offset-1 text-md-left flow-offset-1">
+              <div class="col-sm-6 col-md-3"><span class="icon icon-lg icon-primary fa-edit"></span>
+                <h5>Step 1</h5>
+                <p>Answer some online questions regarding your symptoms. This will help us decide if you can be treated online or if you should visit a doctor's office.</p>
+              </div>
+              <div class="col-sm-6 col-md-3"><span class="icon icon-lg icon-primary fa-cogs"></span>
+                <h5>Step 2</h5>
+                <p>If we can treat your medical problem, you'll create an secure account and enter payment information.
+              </div>
+              <div class="col-sm-6 col-md-3"><span class="icon icon-lg icon-primary fa-user-md"></span>
+                <h5>Step 3</h5>
+                <p>Your answers are reviewed by a board-certified doctor. You will be emailed a treatment plan and any medication(s) will be electronically sent to the pharmacy (of your choice).</p>
+              </div>
+              <div class="col-sm-6 col-md-3"><span class="icon icon-lg icon-primary fa-phone"></span>
+                <h5>Step 4</h5>
+                <p>If needed, a follow up is free of charge. We can reply via email, text, or a call back.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--End section-->
+        </br>
+        </br>
+        </br>
+        </br>
+        <hr />
+
+        <!--Start section-->
+        <section class="well well-sm bg-lighter relative text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <h1 class="text-bold">Pricing</h1></br>
+                <h3 class="text-bold">$32 flat fee</h3>
+                <p class="tes1">You will only be charged if a doctor emails you a treatment plan.
+
+                </p>
+              </div>
+            </div>
+          </br>
+          </div>
+        </section>
+        <!--End section-->
+
+        <hr />
+        <!--Start section-->
+        <section class="well well-sm text-center text-md-left" id="aboutus1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-5">
+              </br>
+                <h1 class="text-bold">About Us</h1>
+                <p class="ul2">Our goal is to provide cost effective medical care, save time, and make you feel better sooner.</h6>
+                <p class="lead">Harkmed strives to do three things exceptionally well:</p></br>
+                <ul class="ul1">
+                  <li>1. Save time by making medical care readily available.</li>
+                  <li>2. Use technology to make medical care efficient and safe.</li>
+                  <li>3. Make the whole online process of getting a diagnosis, getting treatment, and following up as seamless as possible.</li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-6 col-lg-offset-1 text-left">
+                <p class="font-secondary big text-uppercase text-light-clr inset-2">RESPONSE TIME LESS THAN 30 MINUTES</p>
+                <div class="progress">
+                  <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" class="progress-bar"></div><span class="small text-light-clr"></span>
+                </div>
+                <p class="font-secondary big text-uppercase text-light-clr">RESPONSE TIME LESS THAN 2 HOURS</p>
+                <div class="progress">
+                  <div role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" class="progress-bar"></div><span class="small text-light-clr"></span>
+                </div>
+                <p class="font-secondary big text-uppercase text-light-clr">SATISFIED CUSTOMERS</p>
+                <div class="progress">
+                  <div role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" class="progress-bar"></div><span class="small text-light-clr"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--End section-->
+        <hr />
+
+        <!--Start section-->
+        <section class="well well-sm well-inset-2 text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-lg-offset-3">
+                <h1 class="text-bold text-center">Testimonials</h1>
+                <p class="tes1">Our guarantee: If you're not satisfy for any reason, we'll refund your money!</p>
+              </div>
+            </div>
+            <div class="row offset-1">
+              <!--Owl Carousel-->
+              <div data-items="1" data-sm-items="2" data-xs-items="1" data-md-items="3" data-nav="true" data-margin="30" class="owl-carousel">
+                <div class="owl-item">
+                  <blockquote class="quote-2"><!-- <img src="{% static "assets/images/index_img5.jpg" %}" alt="" class="img-circle" > -->
+                    <h6>
+                      <cite>Camille S.</cite>
+                    </h6>
+                    <!-- <p class="small text-light-clr text-uppercase">web-designer</p> -->
+                    <p class="h6 text-italic font-base text-base">
+                      <q>Harkmed worked well for me. Had some urinary symptoms that started while I was work. I just answered their online questions and a half hour later was sent a prescription for antibiotic. Very cool!</q>
+                    </p>
+                  </blockquote>
+                </div>
+                <div class="owl-item">
+                  <blockquote class="quote-2"><!-- <img src="{% static "assets/images/index_img6.jpg" %}" alt="" class="img-circle"> -->
+                    <h6>
+                      <cite>Tom G.</cite>
+                    </h6>
+                    <!-- <p class="small text-light-clr text-uppercase">web-designer</p> -->
+                    <p class="h6 text-italic font-base text-base">
+                      <q>I get 1-2 sinus infections per year that get really bad. Didn't want to take off from work or had the time to speak to a doctor via webchat, so I decided to give this a try. One hour later, I received an email telling me that I was prescribed antibiotic. Took the antibiotics and felt much better. A+ for making it easy to treat sinus problems.</q>
+                    </p>
+                  </blockquote>
+                </div>
+                <div class="owl-item">
+                  <blockquote class="quote-2"><!-- <img src="{% static "assets/images/index_img7.jpg" %}" alt="" class="img-circle"> -->
+                    <h6>
+                      <cite>Samantha W.</cite>
+                    </h6>
+                    <!-- <p class="small text-light-clr text-uppercase">web-designer</p> -->
+                    <p class="h6 text-italic font-base text-base">
+                      <q>Harkmed helped me. Wasn't sure if my acne was infected, but I was concerned because it looked different. I got an antibiotics within 1 hour of answering their questions. The whole process was easy but I hope this doesn't happen again. </q>
+                    </p>
+                  </blockquote>
+                </div>
+                <div class="owl-item">
+                  <blockquote class="quote-2"><!-- <img src="{% static "assets/images/index_img7.jpg" %}" alt="" class="img-circle"> -->
+                    <h6>
+                      <cite>Fred W.</cite>
+                    </h6>
+                    <!-- <p class="small text-light-clr text-uppercase">web-designer</p> -->
+                    <p class="h6 text-italic font-base text-base">
+                      <q>Pleasantly surprised how smooth the process was for treating what turned out to be an eye infection. Just seem to happen randomly. Woke up with one morning. Sent in a photo of the eye and 20 minutes later received an email to pick up eye drops at my pharmacy.I will definitely use them again.</q>
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--End section-->
+      </main>
+      {% endblock %}
+    </div>
+    <!--Core Scripts-->
+    <script src='{% static "assets/js/core.min.js" %}' ></script>
+    <!--jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <!--Include all compiled plugins (below), or include individual files as needed-->
+    <script src='{% static "assets/js/bootstrap.min.js" %}' ></script>
+    <script src='{% static "assets/js/jquery.ui.totop.min.js" %}'></script>
+    <script src='{% static "assets/js/jquery.rd-navbar.min.js" %}'></script>
+    <script src='{% static "assets/js/jquery.swiper.min.js" %}'></script>
+    <script src='{% static "assets/js/jquery.countTo.js" %}'></script>
+    <script src='{% static "assets/js/jquery.counter.js" %}'></script>
+    <script src='{% static "assets/js/jquery.owl-carousel.js" %}'></script>
+    <script src='{% static "assets/js/jquery.search.min.js" %}'></script>
+    <script src='{% static "assets/js/jquery.scrollTo.min.js" %}'></script>
+    <script src='{% static "assets/js/jquery.easy-responsive-tabs.min.js" %}'></script>
+    <script src='{% static "assets/js/mailform/jquery.rd-input-label.js" %}'></script>
+
+
+    <!--Additional Functionality Scripts-->
+    <script src='{% static "assets/js/script.js" %}'></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+    {% block script %}
+    {% endblock %}
+  </body>
+</html>
